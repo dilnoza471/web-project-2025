@@ -8,7 +8,7 @@ const App = () => {
         <div className="header-content">
           <h1>Coffee Shop</h1>
           <nav className="nav-links">
-            <a href="#about">About Us</a>
+            <a href="#about">About US</a>
             <a href="#reserve">Reserve</a>
             <a href="#contact">Contact</a>
           </nav>

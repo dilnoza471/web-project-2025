@@ -18,7 +18,7 @@ const App = () => {
       <section className="hero">
         <div className="hero-content">
           <h2 className="curlytext">Experience the Best Coffee</h2>
-          <p>Freshly brewed, served with love</p>
+          <p>Freshly brewed, serve with love</p>
           <button className="cta-button">Reserve a Table</button>
         </div>
         <div className="hero-content">

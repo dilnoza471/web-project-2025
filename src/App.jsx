@@ -17,36 +17,25 @@ const App = () => {
 
       <section className="hero">
         <div className="hero-content">
-          <h2>Experience the Best Coffee</h2>
+          <h2 className="curlytext">Experience the Best Coffee</h2>
           <p>Freshly brewed, served with love</p>
           <button className="cta-button">Reserve a Table</button>
         </div>
-      </section>
-
-      <section id="about" className="about-us">
-        <h2>About Us</h2>
-        <p>Welcome to Coffee Shop! We serve the finest coffee with a cozy atmosphere perfect for relaxing and catching up with friends. Our mission is to provide you with an unforgettable coffee experience.</p>
-        <img src="/src/assets/about.png" alt="About Coffee Shop" />
-      </section>
-
-      <section id="body-content" className="body-content">
-        <h2>Why Our Coffee?</h2>
-        <p>At Coffee Shop, we take pride in sourcing the best coffee beans and brewing them to perfection. Whether you are a fan of espresso, lattes, or cappuccinos, we are got something for every coffee lover!</p>
-        <div className="body-images">
-          <img src="/coffee.jpg" alt="Coffee Beans" />
-          <img src="/coffee2.jpg" alt="Latte Art" />
+        <div className="hero-content">
+          <img src="/src/assets/about.png" alt="Coffee Beans" />
         </div>
       </section>
 
-      <section id="reserve" className="reserve">
-        <h2>Reserve a Table</h2>
-        <form className="reservation-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="date" required />
-          <button type="submit">Reserve</button>
-        </form>
+
+
+      <section id="body-content" className="body-content">
+        <h2>Why Our Coffee?</h2>
+        <p>At Coffee Shop, we take pride in sourcing the best coffee beans and brewing them to perfection. Whether you
+          are a fan of espresso, lattes, or cappuccinos, we are got something for every coffee lover!</p>
+
       </section>
+
+
 
       <footer id="contact" className="footer">
         <div className="footer-content">

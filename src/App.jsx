@@ -1,4 +1,4 @@
-
+import {Link } from "react-router-dom";
 import './App.css';
 
 const App = () => {
@@ -11,6 +11,8 @@ const App = () => {
             <a href="#about">About Us</a>
             <a href="#reserve">Reserve</a>
             <a href="#contact">Contact</a>
+            <Link to="/Menu">Go to Menu</Link>
+
           </nav>
         </div>
       </header>

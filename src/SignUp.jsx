@@ -8,19 +8,19 @@ const SignUpContainer = () => {
       <Header />
       <div className="leaves">
         <div className="set">
-          <div><img src="/src/assets/leaf_01.png" alt="Leaf 1" /></div>
-          <div><img src="/src/assets/leaf_02.png" alt="Leaf 2" /></div>
-          <div><img src="/src/assets/leaf_03.png" alt="Leaf 3" /></div>
-          <div><img src="/src/assets/leaf_04.png" alt="Leaf 4" /></div>
-          <div><img src="/src/assets/leaf_01.png" alt="Leaf 1" /></div>
-          <div><img src="/src/assets/leaf_02.png" alt="Leaf 2" /></div>
-          <div><img src="/src/assets/leaf_03.png" alt="Leaf 3" /></div>
-          <div><img src="/src/assets/leaf_04.png" alt="Leaf 4" /></div>
+          <div><img src="/src/assets/bean_01.png" alt="Leaf 1" /></div>
+          <div><img src="/src/assets/bean_02.png" alt="Leaf 2" /></div>
+          <div><img src="/src/assets/bean_03.png" alt="Leaf 3" /></div>
+          <div><img src="/src/assets/bean_04.png" alt="Leaf 4" /></div>
+          <div><img src="/src/assets/bean_01.png" alt="Leaf 1" /></div>
+          <div><img src="/src/assets/bean_02.png" alt="Leaf 2" /></div>
+          <div><img src="/src/assets/bean_03.png" alt="Leaf 3" /></div>
+          <div><img src="/src/assets/bean_04.png" alt="Leaf 4" /></div>
         </div>
       </div>
-      <img src="/src/assets/bg.jpg" className="bg" alt="Background" />
+      <img src="/src/assets/bgcafe.jpg" className="bg" alt="Background" />
       <img src="/src/assets/girl.png" className="girl" alt="Girl" />
-      <img src="/src/assets/trees.png" className="trees" alt="Trees" />
+
       <div className="login">
         <h2>Sign In</h2>
         <div className="inputBox">

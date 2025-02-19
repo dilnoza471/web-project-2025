@@ -151,11 +151,12 @@ section .girl {
 
 .leaves .set {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   pointer-events: none;
+
 
 
 }
@@ -163,8 +164,9 @@ section .girl {
 .leaves .set div {
   position: absolute;
   display: block;
-  width: 15%;
-  height: 100%;
+  width: 5vh;
+  height: 5vh;
+
 }
 
 .leaves .set div:nth-child(1) {
@@ -183,7 +185,7 @@ section .girl {
 }
 
 .leaves .set div:nth-child(4) {
-  left: 5%;
+  left: 95%;
   animation: animate 15s linear infinite;
 }
 
@@ -203,7 +205,7 @@ section .girl {
 }
 
 .leaves .set div:nth-child(8) {
-  left: 60%;
+  left: 65%;
   animation: animate 15s linear infinite;
 }
 
@@ -211,7 +213,7 @@ section .girl {
   0% {
     opacity: 0;
     top: -10%;
-    transform: translateX(20px) rotate(0deg);
+    transform: translateX(40px) rotate(10deg);
   }
   10% {
     opacity: 1;

@@ -6,7 +6,7 @@ const App = () => {
     <div className="app">
       <header className="header">
         <div className="header-content">
-          <h1>Coffee Shop</h1>
+          <a href="#"><h1>Coffe shop</h1></a>
           <nav className="nav-links">
             <a href="#about">About Us</a>
             <a href="#reserve">Reserve</a>
@@ -21,7 +21,12 @@ const App = () => {
         <div className="hero-content">
           <h2>Experience the Best Coffee</h2>
           <p>Freshly brewed, served with love</p>
-          <button className="cta-button">Reserve a Table</button>
+          <button
+            onClick={() => document.getElementById("reserve").scrollIntoView({ behavior: "smooth" })}
+            className="cta-button"
+          >
+            Reserve Now
+          </button>
         </div>
       </section>
 

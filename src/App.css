@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +14,7 @@ body {
   color: #333;
 
 }
+
 
 /* Header */
 .header {
@@ -39,6 +43,7 @@ body {
 .header h1 {
   font-size: 2rem;
   margin-right: auto;
+
 }
 
 .nav-links {
@@ -47,7 +52,7 @@ body {
   gap: 20px;
 }
 
-nav a {
+nav a , a:visited{
   color: white;
   text-decoration: none;
   font-size: 1.2rem;

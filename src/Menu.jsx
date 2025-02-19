@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
-import './menu.css'; // Import the CSS file for styling
+import './menu.css';
+
+
+import {Link} from "react-router-dom"; // Import the CSS file for styling
 
 function Menu() {
   // Example menu data
@@ -21,6 +24,11 @@ function Menu() {
 
   return (
     <div className="menu-container">
+        <header className="header">
+              <Link to="/"><h1 className="home">Coffee Shop</h1></Link>
+
+        </header>
+
       <h1 className="menu-title">Our Coffee Menu</h1>
       <div className="menu-grid">
         {menuItems.map(item => (

@@ -43,6 +43,28 @@
   align-items: center;
   margin-bottom: 15px;
 }
+a, a:visited {
+  text-decoration: none;
+}
+.home{
+  color:white;
+}
+
+
+
+
+
+.header {
+
+  background: #2c3e50;
+  color: white;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
 
 .item-name {
   font-size: 24px;

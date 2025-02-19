@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+
+}
+
+/* Header */
+/* Header Styles */
+.header {
+  background: #2c3e50; /* Dark background color */
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a solid look */
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%; /* Make the content take full width */
+}
+
+/* Coffee Shop Title */
+.header h1 {
+  font-size: 2.5rem; /* Larger size for emphasis */
+  font-family: 'CurlyFont', sans-serif; /* Apply the curly font */
+  letter-spacing: 2px; /* Slight space between letters */
+  color: #f39c12; /* Gold color for the title */
+  margin-right: auto;
+  transition: color 0.3s ease; /* Smooth color transition for hover */
+}
+
+/* Coffee Shop Title Hover Effect */
+.header h1:hover {
+  color: #e67e22; /* Darker gold shade on hover */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  gap: 10px; /* Closer gap between links */
+}
+
+
+/* Navigation Links Style */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "CurlyFont", sans-serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Navigation Links */
+nav a:hover {
+  text-decoration: underline;
+  color: #f39c12; /* Change color on hover */
+  transform: scale(0.9); /* Slight scaling effect */
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('/src/assets/bg2.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 80px; /* To account for fixed header */
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  z-index: 1;
+}
+
+.hero-content {
+  width: 100%;
+  color: white;
+  z-index: 2;
+  text-align: left;
+  margin-left: 10vh;
+}
+.hero-content img{
+  height: 90vh;
+  width: 50vh;
+}
+
+.hero h2 {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  font-family: 'CurlyFont', sans-serif;
+}
+
+.hero p {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  font-family: 'LongFont', sans-serif;
+}
+
+.cta-button {
+  background-color: #200C05;
+  width: 30vh;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Mobile Responsive Header */
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 15px 20px; /* Adjust padding for smaller screens */
+  }
+  .hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'CurlyFont', sans-serif;
+  }
+
+  .hero p {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'LongFont', sans-serif;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .header h1 {
+    font-size: 2rem; /* Smaller font size on mobile */
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us img {
+  width: 80%; /* Adjust the percentage to make the image smaller */
+  max-width: 600px; /* Optional: Limits the max width of the image */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+/* Body Content Section */
+.body-content {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  height: 100vh;
+}
+
+.body-content h2 {
+  font-size: 10vh;
+  margin-bottom: 20px;
+  font-family: 'LongFont', sans-serif;
+}
+
+.body-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.body-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+/* Reserve Section */
+.reserve {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reservation-form input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.reservation-form button {
+  padding: 15px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.reservation-form button:hover {
+  background-color: #e67e22;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  width: 100%;             /* Full width of the container */
+  height: 20vh;          /* Full height of the viewport */
+
+}
+
+.footer-content {
+  width: 30%;              /* 30% width for the content */
+}
+
+.footer h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+  }
+  .social-login-icons svg {
+    width: 40px;
+  }
+
+  .social-icon-1,
+  .social-icon-1-1,
+  .social-icon-2,
+  .social-icon-2-2,
+  .social-icon-3,
+  .social-icon-3-3,
+  .social-icon-4,
+  .social-icon-4-4 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+  }
+
+  .icon svg {
+    fill: #111;
+  }
+
+  .socialcontainer {
+    height: 80px;
+    overflow: hidden;
+  }
+  .social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  }
+  .social-icon-1 svg,
+  .social-icon-2 svg,
+  .social-icon-3 svg,
+  .social-icon-4 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+  }
+  .socialcontainer:hover .social-icon-1 {
+    transform: translateY(-70px);
+  }
+  .socialcontainer:hover .social-icon-1 svg,
+  .socialcontainer:hover .social-icon-2 svg,
+  .socialcontainer:hover .social-icon-3 svg,
+  .socialcontainer:hover .social-icon-4 svg {
+    opacity: 1;
+  }
+  .social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(
+      72.44deg,
+      #ff7a00 11.92%,
+      #ff0169 51.56%,
+      #d300c5 85.69%
+    );
+  }
+  .socialcontainer:hover .social-icon-2 {
+    transform: translateY(-70px);
+  }
+  .social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+  }
+
+  .socialcontainer:hover .social-icon-3 {
+    transform: translateY(-70px);
+  }
+  .social-icon-4 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+
+    background: linear-gradient(
+      180deg,
+      rgba(129, 34, 144, 1) 0%,
+      rgba(77, 34, 124, 1) 91%
+    );
+  }
+
+  .socialcontainer:hover .social-icon-4 {
+    transform: translateY(-70px);
+  }

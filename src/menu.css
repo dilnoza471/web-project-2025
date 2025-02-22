@@ -50,22 +50,6 @@ a, a:visited {
   color:white;
 }
 
-
-
-
-
-.header {
-
-  background: #2c3e50;
-  color: white;
-  padding: 20px 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
 .item-name {
   font-size: 24px;
   font-weight: bold;
@@ -73,6 +57,7 @@ a, a:visited {
 }
 
 .item-price {
+  margin-left: 20px;
   font-size: 20px;
   font-weight: bold;
   color: #f39c12;
@@ -85,4 +70,17 @@ a, a:visited {
   line-height: 1.5;
 }
 
-/* Add more specific styles if needed */
+button {
+    width: fit-content;
+    margin: 10px;
+    background: #6b4226;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background: #4a2c19;
+}

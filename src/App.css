@@ -12,73 +12,6 @@ body {
 
 }
 
-/* Header */
-/* Header Styles */
-.header {
-  background: #2c3e50; /* Dark background color */
-  color: white;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a solid look */
-}
-
-/* Header Content */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%; /* Make the content take full width */
-}
-
-/* Coffee Shop Title */
-.header h1 {
-  font-size: 2.5rem; /* Larger size for emphasis */
-  font-family: 'CurlyFont', sans-serif; /* Apply the curly font */
-  letter-spacing: 2px; /* Slight space between letters */
-  color: #f39c12; /* Gold color for the title */
-  margin-right: auto;
-  transition: color 0.3s ease; /* Smooth color transition for hover */
-}
-
-/* Coffee Shop Title Hover Effect */
-.header h1:hover {
-  color: #e67e22; /* Darker gold shade on hover */
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
-}
-
-/* Navigation Links */
-.nav-links {
-  display: flex;
-  justify-content: flex-end; /* Align to the right */
-  gap: 10px; /* Closer gap between links */
-}
-
-
-/* Navigation Links Style */
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: "CurlyFont", sans-serif;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover Effect for Navigation Links */
-nav a:hover {
-  text-decoration: underline;
-  color: #f39c12; /* Change color on hover */
-  transform: scale(0.9); /* Slight scaling effect */
-}
-
 /* Hero Section */
 .hero {
   width: 100%;
@@ -89,7 +22,9 @@ nav a:hover {
   align-items: center;
   text-align: center;
   position: relative;
-  margin-top: 80px; /* To account for fixed header */
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .hero::before {
   content: '';
@@ -126,16 +61,7 @@ nav a:hover {
   font-family: 'LongFont', sans-serif;
 }
 
-.cta-button {
-  background-color: #200C05;
-  width: 30vh;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
+
 
 /* Mobile Responsive Header */
 @media screen and (max-width: 900px) {
@@ -179,23 +105,7 @@ nav a:hover {
 
 
 
-.cta-button:hover {
-  background-color: #e67e22;
-}
 
-/* About Us Section */
-.about-us {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.about-us img {
-  width: 80%; /* Adjust the percentage to make the image smaller */
-  max-width: 600px; /* Optional: Limits the max width of the image */
-  height: auto;
-  border-radius: 10px;
-  margin-top: 20px;
-}
 
 
 /* Body Content Section */
@@ -221,45 +131,6 @@ nav a:hover {
   display: flex;
   justify-content: center;
   gap: 30px;
-}
-
-
-
-/* Reserve Section */
-.reserve {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.reservation-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.reservation-form input {
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.reservation-form button {
-  padding: 15px 30px;
-  background-color: #f39c12;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
-.reservation-form button:hover {
-  background-color: #e67e22;
 }
 
 /* Footer */

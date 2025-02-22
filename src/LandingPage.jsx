@@ -11,7 +11,7 @@ const LandingPage = () => {
         <div className="hero-content">
           <h2 className="curlytext">Experience the Best Coffee</h2>
           <p>Freshly brewed, serve with love</p>
-          <button className="cta-button">Reserve a Table</button>
+
         </div>
         <div className="hero-content">
           <img src="/src/assets/about.png" alt="Coffee Beans" />

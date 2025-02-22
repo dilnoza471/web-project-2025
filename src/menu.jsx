@@ -1,29 +1,35 @@
 import { useState, useEffect } from 'react';
 import './menu.css';
-import Header from "./header.jsx"; // Import the CSS file for styling
+import Header from "./header.jsx";
+import {useNavigate} from "react-router-dom"; // Import the CSS file for styling
 
 function Menu() {
   const [menuItems, setMenuItems] = useState([]);
   const [cart, setCart] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchedMenuItems = [
-      { id: 1, name: 'Espresso', description: 'Strong coffee made by forcing steam through finely-ground coffee beans.', price: 3.00 },
-      { id: 2, name: 'Cappuccino', description: 'Espresso topped with hot milk and steamed milk foam.', price: 4.50 },
-      { id: 3, name: 'Latte', description: 'Espresso mixed with steamed milk and a light layer of foam.', price: 4.00 },
-      { id: 4, name: 'Macchiato', description: 'Espresso with a dollop of foamed milk on top.', price: 3.50 },
-      { id: 5, name: 'Americano', description: 'Espresso mixed with hot water.', price: 2.50 },
-    ];
-    setMenuItems(fetchedMenuItems);
-  }, []);
+  fetch("/menu.json")
+    .then(response => response.json())
+    .then(data => setMenuItems(data))
+    .catch(error => console.error("Error loading menu:", error));
+}, []);
+
 
   const addToCart = (item) => {
     setCart((prevCart) => [...prevCart, item]);
   };
 
   const placeOrder = () => {
-    alert("Order placed successfully! Please pick up and pay at the counter.");
-    setCart([]);
+      const user = JSON.parse(localStorage.getItem("user"));
+      if(!user){
+          alert("Log in before ordering")
+          navigate('/SignUp');
+      }else{
+          alert("Order placed successfully! Please pick up and pay at the counter.");
+          setCart([]);
+      }
+
   };
   const clear = () =>{
       setCart(() => []);

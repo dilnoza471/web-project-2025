@@ -1,0 +1,21 @@
+[
+      { "id": 1,
+        "name": "Espresso",
+        "description": "Strong coffee made by forcing steam through finely-ground coffee beans.",
+        "price": 3.00 },
+      { "id": 2,
+        "name": "Cappuccino",
+        "description": "Espresso topped with hot milk and steamed milk foam.",
+        "price": 4.50 },
+      { "id": 3,
+        "name": "Latte", "description": "Espresso mixed with steamed milk and a light layer of foam.",
+        "price": 4.00 },
+      { "id": 4,
+        "name": "Macchiato",
+        "description": "Espresso with a dollop of foamed milk on top.",
+        "price": 3.50 },
+      { "id": 5,
+        "name": "Americano",
+        "description": "Espresso mixed with hot water.",
+        "price": 2.50 }
+]

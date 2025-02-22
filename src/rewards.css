@@ -77,21 +77,7 @@ hr {
 }
 
 /* Join Button */
-.button {
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    background: #6b4226;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-}
 
-.button:hover {
-    background: #4a2c19;
-}
 footer {
     background: #6b4226; /* Coffee brown */
     color: white;

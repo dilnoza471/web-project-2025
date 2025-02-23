@@ -101,7 +101,7 @@
         "type": "Savory pastries"},
       { "id": 21,
         "name": "Meat pie",
-        "description": "Flaky crust filled with juicy meat and potato mixed stuffing",
+        "description": "Flaky crust filled with meat and potato mixed stuffing",
         "price": 2.00 ,
         "type": "Savory pastries"}
 ]

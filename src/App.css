@@ -49,16 +49,18 @@ body {
   width: 50vh;
 }
 
-.hero h2 {
-  font-size: 6rem;
+.hero h2, .hero h1 {
+  font-size: 9rem;
   margin-bottom: 20px;
   font-family: 'CurlyFont', sans-serif;
+  color: antiquewhite;
 }
 
 .hero p {
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom: 20px;
   font-family: 'LongFont', sans-serif;
+  color: antiquewhite;
 }
 
 

@@ -9,8 +9,8 @@ const LandingPage = () => {
 
       <section className="hero">
         <div className="hero-content">
-          <h2 className="curlytext">Experience the Best Coffee</h2>
-          <p>Freshly brewed, serve with love</p>
+          <h1 className="curlytext">Capulus</h1>
+          <p>Express the best coffee in our little cozy heaven</p>
 
         </div>
         <div className="hero-content">

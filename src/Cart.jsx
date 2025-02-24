@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./cart.css";
-
+import Header from "./header.jsx";
 function Cart() {
   const [cart, setCart] = useState([]);
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ function Cart() {
             <p>Order placed successfully!</p>
           </div>
         )}
-
+      <Header />
       <h1 className="cart-title">Your Cart</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>

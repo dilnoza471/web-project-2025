@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import './menu.css';
 import Header from "./header.jsx";
+import {useNavigate} from "react-router-dom";
 
 function Menu() {
   const [menuItems, setMenuItems] = useState([]);
   const [category, setCategory] = useState("All");
-
+  const navigate = useNavigate();
   useEffect(() => {
     fetch("/menu.json")
       .then(response => response.json())
@@ -18,9 +19,16 @@ function Menu() {
   );
 
   const addToCart = (item) => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(item);
-    localStorage.setItem("cart", JSON.stringify(cart));
+    const user = JSON.parse(localStorage.getItem("user"));
+      if(!user){
+        alert("Log in before ordering")
+          navigate('/SignUp');
+      }else{
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(item);
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+
   };
 
   return (

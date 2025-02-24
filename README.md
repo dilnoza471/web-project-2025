@@ -17,7 +17,7 @@ Developing a functional application in group on a topic of student’s own choic
 
 * Available: Ordering online placing items into cart or removing from the cart
 
-* Log in required before placing an order and log out choice is available
+* Log in required before adding any items to order and log out choice is available
 
 * Menu items sorted according to their types and classes
 
@@ -27,7 +27,7 @@ To set up the project on your local machine, follow these steps:
 
 #### 1.Clone the repository
 
-`[git clone https://github.com/ibadlayevam19/groupproject](https://github.com/dilnoza471/web-project-2025)`
+`[git clone https://github.com/dilnoza471/web-project-2025]`
 
 
 #### 2.Install dependencies

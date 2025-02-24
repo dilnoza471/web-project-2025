@@ -20,9 +20,8 @@ const Header = () => {
           <Link to="/">Coffee Shop</Link>
           <Link to="/menu">Menu</Link>
           <Link to='/rewards'>Rewards</Link>
-          <a href='#contact'>Contact</a>
           { user ? <a className={'log-btn'} onClick={handleLogout}>Log out</a>: <Link to="/SignUp">Sign In</Link> }
-
+          <Link className='view-cart-button' to='/cart'>Cart</Link>
 
         </nav>
       </div>

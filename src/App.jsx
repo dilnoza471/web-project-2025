@@ -4,6 +4,7 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import Menu from "./menu.jsx";
 import Rewards from "./rewards.jsx";
+import Cart from "./Cart.jsx";
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/rewards" element={<Rewards />} />
+          <Route path={'/cart'}  element={<Cart />} />
         </Routes>
     </Router>
   );

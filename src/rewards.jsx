@@ -38,10 +38,13 @@ function rewards(){
 
 
             <footer id="sign">
-                <p>Join Today! Signing up is quick and easy. Visit us in-store or sign up online <Link to="/signup" >here</Link>. Start earning rewards every time you sip your favorite coffee!
-                    Have questions? Contact us at support@capulus.com. or ask one of our baristas in-store.</p>
+                <p>Join Today! Signing up is quick and easy. Visit us in-store or sign up online <Link
+                    to="/signup">here</Link>. Start earning rewards every time you sip your favorite coffee!
+                    Have questions? Contact us at <a href="mailto:support@capulus.com" className="email-link">support@capulus.com</a> or ask one of our baristas in-store.
+                </p>
             </footer>
         </div>
     )
 }
+
 export default rewards;

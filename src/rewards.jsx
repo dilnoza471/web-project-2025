@@ -39,7 +39,7 @@ function rewards(){
 
             <footer id="sign">
                 <p>Join Today! Signing up is quick and easy. Visit us in-store or sign up online <Link to="/signup" >here</Link>. Start earning rewards every time you sip your favorite coffee!
-                    Have questions? Contact us at support_coffe_shop@java.com. or ask one of our baristas in-store.</p>
+                    Have questions? Contact us at support@capulus.com. or ask one of our baristas in-store.</p>
             </footer>
         </div>
     )

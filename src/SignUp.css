@@ -38,7 +38,7 @@ section .trees {
 
 section .girl {
   position: absolute;
-  scale: 0.10;
+  scale: 0.1;
   pointer-events: none;
   animation: animateGirl 10s linear infinite;
 }
@@ -104,7 +104,9 @@ section .girl {
 .login .inputBox ::placeholder {
   color: #8f2c24;
 }
-
+.group button{
+  width: fit-content;
+}
 .login .inputBox #btn {
   position: relative;
   border: none;
@@ -156,9 +158,6 @@ section .girl {
   top: 0;
   left: 0;
   pointer-events: none;
-
-
-
 }
 
 .leaves .set div {
@@ -166,7 +165,6 @@ section .girl {
   display: block;
   width: 5vh;
   height: 5vh;
-
 }
 
 .leaves .set div:nth-child(1) {

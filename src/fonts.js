@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
-import CurlyFont from '/src/fonts/curly.ttf';
-import LongFont from '/src/fonts/long.otf';
+import { useEffect } from "react";
+import CurlyFont from "/src/fonts/curly.ttf";
+import LongFont from "/src/fonts/long.otf";
 
 const Fonts = () => {
   useEffect(() => {
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.innerHTML = `
       @font-face {
         font-family: 'CurlyFont';

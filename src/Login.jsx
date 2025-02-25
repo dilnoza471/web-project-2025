@@ -3,34 +3,29 @@ import Header from "./header.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const SignUpContainer = () => {
+const LogInContainer = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [login, setLogin] = useState(""); // State for login input
+  const [password, setPassword] = useState(""); // State for password input
   const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (password !== confirmPassword) {
-      setError("Passwords don't match");
-      return;
-    }
-
     fetch("/users.json")
       .then((res) => res.json())
       .then((users) => {
-        const userExists = users.some((u) => u.login === username);
-        if (userExists) {
-          setError("Username already exists");
+        const user = users.find(
+          (u) => u.login === login && u.password === password,
+        );
+        if (user) {
+          localStorage.setItem("user", JSON.stringify(user)); // Store user session
+          navigate("/"); // Redirect to home page
         } else {
-          const newUser = { login: username, password };
-          localStorage.setItem("user", JSON.stringify(newUser));
-          navigate("/");
+          setError("Invalid login or password");
         }
       })
-      .catch(() => setError("Error checking user data"));
+      .catch(() => setError("Error fetching user data"));
   };
 
   return (
@@ -38,22 +33,42 @@ const SignUpContainer = () => {
       <Header />
       <div className="leaves">
         <div className="set">
-          <div><img src="/src/assets/bean_01.png" alt="Leaf 1" /></div>
-          <div><img src="/src/assets/bean_02.png" alt="Leaf 2" /></div>
-          <div><img src="/src/assets/bean_03.png" alt="Leaf 3" /></div>
-          <div><img src="/src/assets/bean_04.png" alt="Leaf 4" /></div>
+          <div>
+            <img src="/src/assets/bean_01.png" alt="Leaf 1" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_02.png" alt="Leaf 2" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_03.png" alt="Leaf 3" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_04.png" alt="Leaf 4" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_01.png" alt="Leaf 1" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_02.png" alt="Leaf 2" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_03.png" alt="Leaf 3" />
+          </div>
+          <div>
+            <img src="/src/assets/bean_04.png" alt="Leaf 4" />
+          </div>
         </div>
       </div>
       <img src="/src/assets/sign6.png" className="bg" alt="Background" />
 
       <form className="login" onSubmit={handleSubmit}>
-        <h2>Sign Up</h2>
+        <h2>Log In</h2>
         <div className="inputBox">
           <input
             type="text"
             placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={login}
+            onChange={(e) => setLogin(e.target.value)} // Update state
           />
         </div>
         <div className="inputBox">
@@ -61,28 +76,20 @@ const SignUpContainer = () => {
             type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)} // Update state
           />
         </div>
         <div className="inputBox">
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-        </div>
-        <p style={{ color: "red", textAlign: "center" }}>{error}</p>
-        <div className="inputBox">
-          <input type="submit" value="Sign Up" id="btn" />
+          <p style={{ color: "red", "text-align": "center" }}>{error}</p>
+          <input type="submit" value="Login" id="btn" />
         </div>
         <div className="group">
-          <p>Already have an account?</p>
-          <button type="button" onClick={() => navigate("/SignUp")}>Login</button>
+          <a href="#">Forget Password</a>
+          <button onClick={() => navigate("/SignUp")}>Sign up</button>
         </div>
       </form>
     </section>
   );
 };
 
-export default SignUpContainer;
+export default LogInContainer;

@@ -1,102 +1,104 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
-    max-width: 900px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
 
-h1, h2, h3 {
-    color: #6b4226;
-    text-align: center;
+h1,
+h2,
+h3 {
+  color: #6b4226;
+  text-align: center;
 }
 
 hr {
-    border: 1px solid #d4a373;
-    margin: 20px 0;
+  border: 1px solid #d4a373;
+  margin: 20px 0;
 }
 
 /* Flexbox layout for reward boxes */
 .reward-grid {
-    background: url('./assets/coffe.jpg') no-repeat center center/cover;
-    padding: 80px 20px;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column; /* Stack boxes in a column */
-    align-items: center; /* Center content horizontally */
-    gap: 20px; /* Add space between reward boxes */
-    width: 100%;
-    max-width: 800px; /* Adjust based on your design */
-    margin: auto;
-    justify-content: center;
-    justify-items: center;
+  background: url("./assets/coffe.jpg") no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack boxes in a column */
+  align-items: center; /* Center content horizontally */
+  gap: 20px; /* Add space between reward boxes */
+  width: 100%;
+  max-width: 800px; /* Adjust based on your design */
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
 }
 
 .reward-box {
-   background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;  /* Ensures it takes full width of the container */
-    text-align: center;
-    list-style: none;
-    left: inherit;
-    margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%; /* Ensures it takes full width of the container */
+  text-align: center;
+  list-style: none;
+  left: inherit;
+  margin: auto;
 }
 
 .reward-box:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
 
 .reward-box li {
-    font-size: 18px;
-    padding: 10px;
-    border-left: 4px solid #c68c53; /* Brown accent */
-    background: rgba(255, 255, 255, 0.9);
-    margin: 10px 0;
-    border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  border-left: 4px solid #c68c53; /* Brown accent */
+  background: rgba(255, 255, 255, 0.9);
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
 .reward-title {
-    font-family: 'Pacifico', cursive;
-    font-size: 28px;
-    color: #c68c53; /* Coffee brown */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Pacifico", cursive;
+  font-size: 28px;
+  color: #c68c53; /* Coffee brown */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Join Button */
 
 footer {
-    background: #6b4226; /* Coffee brown */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 16px;
+  background: #6b4226; /* Coffee brown */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 16px;
 }
 
 footer a {
-    color: #ffd700; /* Gold accent */
-    text-decoration: none;
-    font-weight: bold;
+  color: #ffd700; /* Gold accent */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer p {
-    margin: 5px 0;
+  margin: 5px 0;
 }

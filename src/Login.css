@@ -38,7 +38,7 @@ section .trees {
 
 section .girl {
   position: absolute;
-  scale: 0.10;
+  scale: 0.1;
   pointer-events: none;
   animation: animateGirl 10s linear infinite;
 }
@@ -57,6 +57,7 @@ section .girl {
     transform: translateX(calc(100% + 300vw)) rotateY(180deg);
   }
 }
+
 
 .login {
   position: relative;
@@ -125,13 +126,19 @@ section .girl {
 .login .group {
   display: flex;
   justify-content: space-between;
-}
 
+  align-items: center;
+}
+.group button {
+  width: fit-content;
+  min-width: fit-content;
+}
 .login .group a {
   font-size: 1.25em;
   color: #8f2c24;
   font-weight: 500;
   text-decoration: none;
+  left:-50px;
 }
 
 .login .group a:nth-child(2) {
@@ -157,9 +164,6 @@ section .girl {
   top: 0;
   left: 0;
   pointer-events: none;
-
-
-
 }
 
 .leaves .set div {
@@ -167,7 +171,6 @@ section .girl {
   display: block;
   width: 5vh;
   height: 5vh;
-
 }
 
 .leaves .set div:nth-child(1) {

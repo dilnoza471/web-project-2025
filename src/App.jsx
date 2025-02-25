@@ -7,18 +7,16 @@ import Rewards from "./rewards.jsx";
 import Cart from "./Cart.jsx";
 
 const App = () => {
-
-
   return (
     <Router>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/rewards" element={<Rewards />} />
-          <Route path={'/cart'}  element={<Cart />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/rewards" element={<Rewards />} />
+        <Route path={"/cart"} element={<Cart />} />
+      </Routes>
     </Router>
   );
 };
